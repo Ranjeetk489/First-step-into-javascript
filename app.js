@@ -8,3 +8,8 @@ btnTranslate.addEventListener("click", function clickEventHandler() {
     console.log("Encountered a Click!");
     document.getElementById("dummy").innerHTML = data;
 });
+function myFn(){
+    document.getElementById("btn").innerHTML = "neogcamp Guide";
+    document.getElementById("btn").href = "https://neog.camp/guide/lesson-four";
+    document.getElementById("btn").target = "_empty";
+}
