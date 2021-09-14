@@ -13,3 +13,13 @@ function myFn(){
     document.getElementById("btn").href = "https://neog.camp/guide/lesson-four";
     document.getElementById("btn").target = "_empty";
 }
+var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
+function getTranslationURL(text){
+    return serverURL + "?" + "text=" + text
+}
+function clickeHandler(){
+    var inputText = txtInput.vake;
+    fetch(getTranslationURL(inputText))
+    .then(response => response.json)
+    .then(json => console.log(json))
+}
